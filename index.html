@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1>🌟 Interactive Web Experience</h1>
+      <nav>
+        <a href="#quiz">Quiz</a>
+        <a href="#carousel">Gallery</a>
+        <a href="#api">Jokes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+      <h2>📝 Take the Quiz</h2>
+      <div id="quiz-container"></div>
+      <button id="submitQuiz">Submit Quiz</button>
+      <p id="quizResult"></p>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="section">
+      <h2>🖼️ Image Carousel</h2>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img src="https://picsum.photos/id/1011/800/400" alt="Image 1" />
+          <img src="https://picsum.photos/id/1015/800/400" alt="Image 2" />
+          <img src="https://picsum.photos/id/1016/800/400" alt="Image 3" />
+        </div>
+        <button class="carousel-btn prev">❮</button>
+        <button class="carousel-btn next">❯</button>
+      </div>
+    </section>
+
+    <!-- API Section -->
+    <section id="api" class="section">
+      <h2>😂 Random Jokes</h2>
+      <div id="jokeBox">Click below to get a joke!</div>
+      <button onclick="fetchJoke()">Get Joke</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>📩 Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Mohan Boddu | Built with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
